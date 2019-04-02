@@ -1,0 +1,7 @@
+0,not given 
+1,the model base price is of wrong format
+2,the model name is missing
+3,the name of the optionSet is missing
+4,the option is missing
+5,the optionSet is missing
+6,the make of the model is missing

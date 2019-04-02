@@ -1,0 +1,21 @@
+you have two options
+0 - send a properties file to the server to create an automobile
+1 - select an Automobile and configure a car
+please type 0 or 1 for your option
+0
+please uphold the properties object
+please enter the path for the file: either FordZTW-properties.txt or 12.txt
+12.txt
+the Car Model is created successfully
+creating auto from txt file
+
+you have two options
+0 - send a properties file to the server to create an automobile
+1 - select an Automobile and configure a car
+please type 0 or 1 for your option
+0
+please uphold the properties object
+please enter the path for the file: either FordZTW-properties.txt or 12.txt
+FordZTW-properties.txt
+the Car Model is created successfully
+creating auto from txt file

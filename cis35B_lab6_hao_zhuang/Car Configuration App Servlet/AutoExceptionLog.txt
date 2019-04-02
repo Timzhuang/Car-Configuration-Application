@@ -1,0 +1,98 @@
+Error NO: 2 Error Message: the model name is missing
+Error NO: 2 Error Message: the model name is missing
+Error NO: 2 Error Message: the model name is missing
+Error NO: 2 Error Message: the model name is missing
+Error NO: 2 Error Message: the model name is missing
+Error NO: 2 Error Message: the model name is missing
+Error NO: 2 Error Message: the model name is missing
+Error NO: 1 Error Message: the model base price is of wrong format
+Error NO: 1 Error Message: the model base price is of wrong format
+Error NO: 1 Error Message: the model base price is of wrong format
+Error NO: 1 Error Message: the model base price is of wrong format
+Error NO: 3 Error Message: the name of the optionSet is missing
+Error NO: 1 Error Message: the model base price is of wrong format
+Error NO: 3 Error Message: the name of the optionSet is missing
+Error NO: 1 Error Message: the model base price is of wrong format
+Error NO: 3 Error Message: the name of the optionSet is missing
+Error NO: 1 Error Message: the model base price is of wrong format
+Error NO: 3 Error Message: the name of the optionSet is missing
+Error NO: 1 Error Message: the model base price is of wrong format
+Error NO: 3 Error Message: the name of the optionSet is missing
+Error NO: 1 Error Message: the model base price is of wrong format
+Error NO: 4 Error Message: null
+Error NO: 3 Error Message: the name of the optionSet is missing
+Error NO: 1 Error Message: the model base price is of wrong format
+Error NO: 4 Error Message: null
+Error NO: 3 Error Message: the name of the optionSet is missing
+Error NO: 1 Error Message: the model base price is of wrong format
+Error NO: 4 Error Message: null
+Error NO: 3 Error Message: the name of the optionSet is missing
+Error NO: 1 Error Message: the model base price is of wrong format
+Error NO: 4 Error Message: null
+Error NO: 3 Error Message: the name of the optionSet is missing
+Error NO: 1 Error Message: the model base price is of wrong format
+Error NO: 4 Error Message: null
+Error NO: 3 Error Message: the name of the optionSet is missing
+Error NO: 6 Error Message: the input file for the model is not found!
+Error NO: 6 Error Message: the input file for the model is not found!
+Error NO: 6 Error Message: the input file for the model is not found!
+Error NO: 6 Error Message: the input file for the model is not found!
+Error NO: 6 Error Message: the input file for the model is not found!
+Error NO: 2 Error Message: the model name is missing
+Error NO: 1 Error Message: the model base price is of wrong format
+Error NO: 2 Error Message: the model name is missing
+Error NO: 1 Error Message: the model base price is of wrong format
+Error NO: 4 Error Message: the option is missing
+Error NO: 3 Error Message: the name of the optionSet is missing
+Error NO: 2 Error Message: the model name is missing
+Error NO: 1 Error Message: the model base price is of wrong format
+Error NO: 4 Error Message: the option is missing
+Error NO: 3 Error Message: the name of the optionSet is missing
+Error NO: 2 Error Message: the model name is missing
+
+Error NO: 1 Error Message: the model base price is of wrong format
+
+Error NO: 4 Error Message: the option is missing
+
+Error NO: 2 Error Message: the model name is missing
+
+Error NO: 2 Error Message: the model name is missing
+
+Error NO: 1 Error Message: the model base price is of wrong format
+
+Error NO: 4 Error Message: the option is missing
+
+Error NO: 2 Error Message: the model name is missing
+
+Error NO: 2 Error Message: the model name is missing
+
+Error NO: 1 Error Message: the model base price is of wrong format
+
+Error NO: 4 Error Message: the option is missing
+
+Error NO: 3 Error Message: the name of the optionSet is missing
+
+Error NO: 3 Error Message: the name of the optionSet is missing
+Error NO: 3 Error Message: the name of the optionSet is missing
+Error NO: 3 Error Message: the name of the optionSet is missing
+Error NO: 6 Error Message: the make of the model is missing
+Error NO: 6 Error Message: the make of the model is missing
+Error NO: 6 Error Message: the make of the model is missing
+Error NO: 6 Error Message: the make of the model is missing
+Error NO: 6 Error Message: the make of the model is missing
+Error NO: 6 Error Message: the make of the model is missing
+Error NO: 6 Error Message: the make of the model is missing
+Error NO: 2 Error Message: the model name is missing
+Error NO: 2 Error Message: the model name is missing
+Error NO: 1 Error Message: the model base price is of wrong format
+Error NO: 1 Error Message: the model base price is of wrong format
+Error NO: 3 Error Message: the name of the optionSet is missing
+Error NO: 1 Error Message: the model base price is of wrong format
+Error NO: 3 Error Message: the name of the optionSet is missing
+Error NO: 1 Error Message: the model base price is of wrong format
+Error NO: 3 Error Message: the name of the optionSet is missing
+Error NO: 1 Error Message: the model base price is of wrong format
+Error NO: 3 Error Message: the name of the optionSet is missing
+Error NO: 1 Error Message: the model base price is of wrong format
+Error NO: 3 Error Message: the name of the optionSet is missing
+Error NO: 4 Error Message: the option is missing

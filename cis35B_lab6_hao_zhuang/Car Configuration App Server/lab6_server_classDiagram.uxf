@@ -1,0 +1,698 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>660</x>
+      <y>30</y>
+      <w>150</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>Option
+Package::model
+--
+-name: string
+-price: double
+--
+#Option()
+#Option(name: string, price: double)
+#Option(name: string)
+#Option(price: double)
+#getName(): string
+#getPrice() : string
+#setName(name: string): void
+#setPrice(price: double): void
+#print():void
++toString():string</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>390</x>
+      <y>30</y>
+      <w>220</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>OptionSet
+Package::model
+--
+-options: ArrayList&lt;Option&gt; 
+-name: string
+-choice: option
+--
+#OptionSet()
+#OptionSet(name:string, size: int)
+#OptionSet(name:string)
+#OptionSet(size: int)
+#getOption(position: int):Option
+#getName():string
+#setName(name: string):void
+#setOption(index: int, name: string, price: double):void
+#setOption(index: int, name: opt: Option):void
+#setSize(size: int):void
+#findOption(name: string):Option
+#deleteOption(name: string): boolen
+#print():void
++toString():string
+#size():int
+#getOptionChoice(): Option
+#setOptionChoice(String optionName): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>20</x>
+      <y>10</y>
+      <w>290</w>
+      <h>470</h>
+    </coordinates>
+    <panel_attributes>Automotive
+Package::model
+--
+-model: string
+-make: string
+-basePrice: double
+-optionSets: ArrayList&lt;OptionSet&gt; 
+-optionChoices: ArrayList&lt;Option&gt; 
+--
++Automotive()
++Automotive(name: string, basePrice: double, size: int)
++Automotive(basePrice: double, size: int)
++Automotive(name: string, size: int)
++Automotive(name: string, basePrice: double)
++updateOptionChoices(Option choice, Option oldChoice): void
++getName(): string
++getBasePrice():double
++getOptionSet(index: int):OptionSet
++findOptionSet(name: string) : OptionSet
++findOption(OptName: string, OptSetName: string)L OptionSet
++setName(name: string):void
++setBasePrice(price: double):void
++setOptionSet(index: int, optSet:OptionSet):void
++setOptionSet(index: int, optSetName: string, optNames: stirng[], prices: double[]):void
++setOptionSet(oldOptSetName: string, newOptSetName: string, optNames: stirng[], prices: double[]):void
++setOptionSetName(index: int, name: string): void
++setOptionSetName(oldName: string, newName: string): void
++setOptionSize(index: int, name: string): void
++setOptionSize(oldName: string, newName: string): void
++createOptionSets(size: int): void
++setOption(optSetName:stirng, name:string, index: int, price: double):void
++setOption(optSetName:stirng, oldName:string, newName: string, price: double):void\
++setOptionPrice(optionName: string,OptionSetName: string, price: double): void
++deleteOptionSet(name: string):boolean
++deleteOption(optName: string, optSetName: string): boolean
++print():void
++toString():string
++getOptionChoice(optionSetName: String ): String 
++getOptionChoicePrice(optionSetName: String ): double 
++getMake():string
++setMake(): string
+-updateOptionChoices(Option choice, Option oldChoice): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1090</x>
+      <y>630</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>CarConfigServer
+Package::Server
+--
+-serverSocket: ServerSocket
+--
++runCarConfigServer(): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>840</x>
+      <y>20</y>
+      <w>210</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>FileIO
+Package::util
+--
+
+--
++buildAutoObject(fileName: string):Automotive
++writeAutoToDisk(auto: Automotive):void
++readAutoFromDisk(): automotive
++parseProperties(): Automobile
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>300</x>
+      <y>20</y>
+      <w>110</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;90.0;30.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>600</x>
+      <y>40</y>
+      <w>80</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;60.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1070</x>
+      <y>10</y>
+      <w>210</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>AutoException
+package: exception
+--
++errorCodes: ArrayList&lt;ErrorCode&gt; 
+-errorNO: int
+-errorMSG: String
+--
++initializeErrorCode(): void 
++setErrorNO(errorNO: int) :void
++setErrorMSG(errorMSG:String): void 
++getErrorMSG():String
++getErrorNO(): int
++printErrorMessage(): void
++fix(auto:Automobile, optionSetName: StringBuffer ): void  
++logTimestamps(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1340</x>
+      <y>120</y>
+      <w>230</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>AutoExceptionHelper
+package: exception
+--
+
+--
++fixError1(auto: Automobile ): void
++fixError2(auto: Automobile ): void
++fixError3(auto: Automobile ): void
++fixError4(auto: Automobile ): void
++fixError5(auto: Automobile ): void
++fixError6(auto: Automobile ): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>150</x>
+      <y>470</y>
+      <w>30</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1340</x>
+      <y>0</y>
+      <w>230</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>ErrorCode
+package: exception
+--
+NO_MODEL_PRICE = 1
+NO_MODEL_NAME = 2
+NO_OPTIONSET_NAME = 3
+NO__OPTION = 4
+NO_OPTIONSET = 5
+NO_MAKE = 6
+--
++setErrorNO(errorNO: int): void
++setErrorMSG(errorMSG: String) : void
++getErrorMSG(): String
++getErrorNO(): int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1270</x>
+      <y>0</y>
+      <w>90</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;20.0;70.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>60</x>
+      <y>530</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>ProxyAutomobile
+package: adaptor
+--
+-autoMap: LinkedHashMap&lt;String,Automobile&gt;
+--
++buildAuto(fileName:String): void 
++printAuto(modelName: String): void
++updateOptionSetName(String modelName, String optionSetName, String newName): void
++updateOptionPrice(String modelName, String optionSetName, String optionName, double newPrice): void
++fix(e: AutoException): void
++updateOptionPrice(String modelName, String optionSetName, String optionName, String neewOptionName): void
++parseProperties(properties: Properties):void
++getAllAutos(): List&lt;Automile&gt;
++getAuto(model: String) : Automobile</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>360</x>
+      <y>300</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>CreateAuto 
+package: adaptor
+--
+
+--
++buildAuto(fileName:String): void 
++printAuto(modelName: String): void
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>600</x>
+      <y>310</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>UpdateAuto
+package: adaptor
+--
+
+--
++updateOptionSetName(String modelName, String optionSetName, String newName): void
++updateOptionPrice(String modelName, String optionSetName, String optionName, double newPrice): void
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>840</x>
+      <y>310</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>FixAuto
+package: adaptor
+--
+
+--
++fix(e: AutoException): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>400</x>
+      <y>570</y>
+      <w>210</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>BuildAuto
+package: adaptor
+--
+
+--
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>260</x>
+      <y>580</y>
+      <w>160</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;50.0;140.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>440</x>
+      <y>480</y>
+      <w>80</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;60.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>490</x>
+      <y>490</y>
+      <w>210</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>190.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>490</x>
+      <y>490</y>
+      <w>460</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>440.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1080</x>
+      <y>310</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Scalable
+package: adaptor
+--
+
+--
++updateOptionName(String modelName, String optionSetName, String optionName, String neewOptionName): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>490</x>
+      <y>490</y>
+      <w>710</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>690.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>30</x>
+      <y>740</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>EditOption 
+package: adaptor
+implement: Runnable
+--
+-thread: Thread
+-optNum: int
+--
++updateOptionPrice(String modelName, String optionSetName, String optionName, String neewOptionName): void
++run()
++op()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>680</x>
+      <y>790</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Driver
+Package::driver
+--
+
+--
++main(args: string[]):void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1350</x>
+      <y>310</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>AutoServer
+package: Server
+--
+
+--
++parseProperties(properties: Properties):void
++getAllAutos(): List&lt;Automile&gt;
++getAuto(model: String) : Automobile</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>490</x>
+      <y>490</y>
+      <w>990</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>970.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1340</x>
+      <y>770</y>
+      <w>210</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>SocketClientInterface
+Package::Server
+--
+-DEBUG: boolean
+-PORT : int
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1340</x>
+      <y>630</y>
+      <w>210</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>DefaultSocketClient
+Package::Server
+extends: Thread
+--
+-in: BufferedReader()
+-out: BufferedWritter()
+-clientSocket: Socket
+-host: String
+-port: int
+--
++run() : void
++openConnection(): boolean
++handleSession(): void
++closeSession(): void
++setPort(port: int): void
++getPort(): int
++setHost(host: String): void
++getHost(): String
++sendOutput(): void
++handleInput(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1340</x>
+      <y>860</y>
+      <w>210</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>SocketClientConstants
+Package::Server
+--
+
+--
++openConnection(): boolean
++handleSession(): void
++closeSession(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1330</x>
+      <y>740</y>
+      <w>150</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;170.0;130.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1330</x>
+      <y>740</y>
+      <w>150</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;40.0;130.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1090</x>
+      <y>860</y>
+      <w>210</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>CarConfigSocketClient
+Package::Server
+
+--
+
+--
++handleSession(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1290</x>
+      <y>670</y>
+      <w>70</w>
+      <h>270</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>50.0;10.0;10.0;250.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>160</x>
+      <y>710</y>
+      <w>30</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;30.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1270</x>
+      <y>10</y>
+      <w>90</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;70.0;150.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1180</x>
+      <y>810</y>
+      <w>30</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>810</x>
+      <y>570</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>BuildCarModelOptions
+package: Server
+--
+AutoServer autoServer
+--
++parseProperties(properties: Properties):void
++getAllAutos(): List&lt;Automile&gt;
++getAuto(model: String) : Automobile</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>910</x>
+      <y>490</y>
+      <w>570</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>550.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>600</x>
+      <y>610</y>
+      <w>230</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>210.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1010</x>
+      <y>700</y>
+      <w>100</w>
+      <h>230</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;80.0;210.0</additional_attributes>
+  </element>
+</diagram>
